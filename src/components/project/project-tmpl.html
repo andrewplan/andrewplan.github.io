@@ -1,0 +1,86 @@
+<div>
+    <nav class="project-nav-wrapper">
+        <div
+            class="project-nav-wrapper-back-icon-wrapper"
+            ui-sref="home-view( { slideNum: 2 } )"
+        >
+          <i class="material-icons" style="font-size: 36px">arrow_back</i>
+        </div>
+        <div
+            class="project-nav-wrapper-logo-wrapper-small"
+            ui-sref="home-view"
+        >
+            <img class="logo-slide-wrapper-logo-image" src="./../home/AndrewPlan_logo.png" alt="Andrew Plan, full stack web developer">
+        </div>
+        <div class="project-nav-wrapper-menu-icon-wrapper">
+          <i class="material-icons" style="font-size: 36px">menu</i>
+        </div>
+    </nav>
+
+    <div class="project-heading-wrapper">
+        <h4 class="project-heading-wrapper-recent-projects-text">
+            RECENT PROJECTS
+        </h4>
+        <h1 class="project-heading-wrapper-project-name-text">
+            {{ $ctrl.projectObj.name }}
+        </h1>
+        <h3 class="project-heading-wrapper-tagline-text">{{ $ctrl.projectObj.tagline }}</h3>
+    </div>
+</div>
+
+<ks-swiper-container
+    class="swiper-container-center-wrapper"
+    initial-slide="0"
+    override-parameters="{ 'speed': 400 }"
+    show-nav-buttons="true"
+    swiper="$ctrl.swiper"
+>
+    <ks-swiper-slide class="swiper-slide">
+        <div class="project-slide-center-wrapper">
+            <div class="project-slide-block-wrapper">
+                <div class="project-slide-block-wrapper-blue-box"></div>
+                <div class="project-slide-block-wrapper-black-box"></div>
+                <div class="project-slide-block-wrapper-video-box">
+                    <div class="project-slide-block-wrapper-video-box-video-container">
+                        <iframe
+                          ng-src="{{ $ctrl.trustSrc( $ctrl.projectObj.walkthroughUrl ) }}"
+                          frameborder="0"
+                          allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+
+    <ks-swiper-slide class="swiper-slide">
+        <div class="project-slide-center-wrapper">
+            <div class="project-facts-slide-wrapper-content-wrapper">
+                <div class="project-facts-slide-wrapper-content-wrapper-blue-box"></div>
+                <div class="project-facts-slide-wrapper-content-wrapper-black-box"></div>
+                <div class="project-facts-slide-wrapper-content-wrapper-white-box">
+                    <ul>
+                        <li ng-repeat="fact in $ctrl.projectObj.facts">{{ fact }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+
+    <!-- <ks-swiper-slide class="swiper-slide">
+        <div class="project-slide-center-wrapper">
+
+        </div>
+    </ks-swiper-slide> -->
+
+</ks-swiper-container>
+
+<div class="project-links-wrapper">
+    <a ng-href="{{ $ctrl.trustSrc( $ctrl.projectObj.websiteUrl ) }}">
+        <p>VISIT SITE</p>
+    </a>
+    <a ng-href="{{ $ctrl.trustSrc( $ctrl.projectObj.githubUrl ) }}">
+        <p>GITHUB</p>
+    </a>
+</div>

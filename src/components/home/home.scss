@@ -1,0 +1,434 @@
+@font-face {
+  font-family: 'Sifonn Pro';
+  src: url("./SIFONN_PRO.otf");
+}
+
+.home-nav-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 11vh;
+    padding-top: 0.2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-menu-icon-wrapper {
+        position: fixed;
+        left: 1%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-logo-wrapper-small {
+        height: 8vh;
+        width: 16vh;
+        display: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.swiper-container-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide-center-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-slide-wrapper {
+    height: calc( 75% * 85vw );
+    width: 85vw;
+
+    &-logo-image {
+        width: 100%;
+        height: auto;
+    }
+
+    &-subheader-wrapper {
+        text-align: right;
+        font-family: 'Lato', sans-serif;
+
+        &-lines {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.35rem;
+            letter-spacing: 1.8px;
+        }
+    }
+}
+
+.about-me-slide-wrapper {
+
+    &-about-me-text-wrapper {
+        font-family: 'Sifonn Pro', sans-serif;
+        letter-spacing: 0.1rem;
+        text-align: right;
+
+        &-about-text {
+            margin: 0;
+        }
+
+        &-me-text {
+            margin: 0.5rem 0 0.5rem 0;
+            color: #38b3fc;
+        }
+    }
+
+    &-content-wrapper {
+        height: 50vh;
+        width: 47vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-blue-box {
+            background: #38b3fc;
+            height: 90%;
+            width: 90%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-black-box {
+            background: #000000;
+            height: 90%;
+            width: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        &-white-box {
+            background: #FFFFFF;
+            height: 90%;
+            width: 90%;
+            z-index: 4;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                letter-spacing: 0.1rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+}
+
+.my-skills-slide-wrapper {
+
+    &-my-skills-text-wrapper {
+        font-family: 'Sifonn Pro', sans-serif;
+        letter-spacing: 0.1rem;
+        text-align: left;
+
+        &-my-text {
+            margin: 0;
+        }
+
+        &-skills-text {
+            margin: 0.5rem 0 0.5rem 0;
+            color: #38b3fc;
+        }
+    }
+
+    &-content-wrapper {
+        height: 50vh;
+        width: 47vh;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        div {
+            padding: 1rem;
+            font-size: 36px;
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                color: #38b3fc;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.recent-projects-slide-wrapper {
+    padding: 0 1rem 0 1rem;
+    font-family: 'Sifonn Pro', sans-serif;
+    letter-spacing: 0.1rem;
+    text-align: left;
+
+    &-heading-wrapper {
+
+        &-recent-projects-text {
+          font-size: 24px;
+          color: #38b3fc;
+        }
+
+        &-project-name-text {
+          font-size: 36px;
+
+          &:hover {
+            cursor: pointer;
+            color: #38b3fc;
+          }
+        }
+    }
+}
+
+.contact-info-slide-wrapper {
+    position: relative;
+
+    &-contact-info-text-wrapper {
+        font-family: 'Sifonn Pro', sans-serif;
+        letter-spacing: 0.1rem;
+        text-align: left;
+
+        &-get-in-text {
+            margin: 0;
+        }
+
+        &-touch-text {
+            margin: 0.5rem 0 0.5rem 0;
+            color: #38b3fc;
+        }
+    }
+
+    &-picture-wrapper {
+        position: absolute;
+        top: 0;
+        right: -9px;
+        width: 132px;
+        height: auto;
+        z-index: 6;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-content-wrapper {
+        height: 50vh;
+        width: 47vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-blue-box {
+            background: #38b3fc;
+            height: 90%;
+            width: 90%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-black-box {
+            background: #000000;
+            height: 90%;
+            width: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        &-white-box {
+            background: #FFFFFF;
+            height: 90%;
+            width: 90%;
+            z-index: 4;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: black;
+                text-decoration: none;
+                transition: 0.2s all ease-in-out;
+
+                &:hover {
+                    color: #38b3fc;
+                }
+            }
+
+            h3 {
+                letter-spacing: 0.2rem;
+            }
+
+            p {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                letter-spacing: 0.1rem;
+                line-height: 1.4rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.bottom-nav-wrapper {
+    height: 20vh;
+    width: 20vw;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    left: 1%;
+
+      .arrow-wrapper {
+        width: 5vh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+          .slider-arrow {
+              margin: 0;
+              padding: 0;
+              font-size: 48px;
+              color: #38b3fc;
+
+              &:hover {
+                  cursor: pointer;
+              }
+          }
+      }
+}
+
+.bottom-nav-links-wrapper {
+    height: 12vh;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-links-container {
+        width: 70vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        font-family: 'Sifonn Pro', sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+
+
+
+        &-about-link, &-projects-link {
+            color: black;
+            display: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            span:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-contact-link {
+            color: #38b3fc;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media ( min-device-width: 768px ) {
+    .bottom-nav-wrapper .arrow-wrapper .slider-arrow {
+        font-size: 82px;
+    }
+
+    .logo-slide-wrapper {
+        height: calc( 75% * 70vw );
+        width: 70vw;
+    }
+
+    .logo-slide-wrapper-subheader-wrapper-lines {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .bottom-nav-links-wrapper {
+        display: flex;
+    }
+
+    .bottom-nav-links-wrapper-links-container-about-link
+    , .bottom-nav-links-wrapper-links-container-projects-link {
+        display: inline-block;
+    }
+}
+
+@media ( min-device-width: 768px ) and ( max-device-width: 1023px ) {
+    .bottom-nav-links-wrapper-links-container p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media ( min-device-width: 1024px ) {
+    .home-nav-wrapper-menu-icon-wrapper {
+        display: none;
+    }
+
+    .about-me-slide-wrapper-content-wrapper-white-box p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .my-skills-slide-wrapper-content-wrapper div {
+        padding: 1rem;
+        font-size: 72px;
+    }
+
+    .contact-info-slide-wrapper-picture-wrapper {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: 180px;
+    }
+
+    .contact-info-slide-wrapper-content-wrapper-white-box {
+        h3 {
+            font-size: 1.5rem;
+            letter-spacing: 0.4rem;
+        }
+
+        p {
+            letter-spacing: 0.1rem;
+            line-height: 1.5rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    .bottom-nav-links-wrapper-links-container p {
+        font-size: 1.3rem;
+        letter-spacing: 2.5px;
+    }
+
+}

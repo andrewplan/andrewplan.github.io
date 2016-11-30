@@ -1,0 +1,225 @@
+.project-nav-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 11vh;
+    padding-top: 0.2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-back-icon-wrapper {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-logo-wrapper-small {
+        height: 8vh;
+        width: 16vh;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-menu-icon-wrapper {
+        opacity: 0;
+    }
+}
+
+.project-heading-wrapper {
+    font-family: 'Sifonn Pro', sans-serif;
+    position: fixed;
+    top: 15%;
+    left: 13%;
+
+    &-recent-projects-text {
+        color: #38b3fc;
+        letter-spacing: 0.05rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &-project-name-text {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        letter-spacing: 0.15rem;
+    }
+
+    &-tagline-text {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.project-slide-center-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-slide-block-wrapper {
+    height: calc( 56.25% * 70vw );
+    width: 70vw;
+    padding: 3.2% 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-blue-box {
+        background: #38b3fc;
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &-black-box {
+        background: #000000;
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &-video-box {
+        height: 90%;
+        width: 90%;
+        z-index: 4;
+
+        &-video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 35px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        &-video-container iframe,
+        &-video-container object,
+        &-video-container embed  {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.project-facts-slide-wrapper {
+
+    &-content-wrapper {
+        height: 29vh;
+        width: 70vw;
+        // padding: 20px 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-blue-box {
+            background: #38b3fc;
+            height: 85%;
+            width: 85%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-black-box {
+            background: #000000;
+            height: 85%;
+            width: 85%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        &-white-box {
+            background: #FFFFFF;
+            height: 85%;
+            width: 85%;
+            z-index: 4;
+            font-family: 'Lato', sans-serif;
+            border: 1px solid gainsboro;
+            overflow: auto;
+
+            ul {
+                padding-left: 20px;
+            }
+
+            ul li {
+                margin: 1em;
+                letter-spacing: 0.1rem;
+                line-height: 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.project-links-wrapper {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    bottom: 15%;
+    text-align: center;
+    font-family: 'Sifonn Pro', sans-serif;
+
+    a {
+        color: black;
+        text-decoration: none;
+        transition: 0.2s all ease-in-out;
+
+        &:hover {
+            color: #38b3fc;
+            cursor: pointer;
+        }
+    }
+}
+
+@media ( min-device-width: 425px ) and ( max-device-width: 767px ) {
+    .project-facts-slide-wrapper-content-wrapper {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media ( min-device-width: 768px ) {
+    .project-slide-block-wrapper {
+        height: calc( 56.25% * 38vw );
+        width: 38vw;
+        padding: 2vw 0;
+    }
+
+    .project-facts-slide-wrapper-content-wrapper {
+        width: 43vw;
+        height: 43vw;
+    }
+}
+
+@media ( min-device-width: 1024px ) {
+    .project-facts-slide-wrapper-content-wrapper {
+        width: 440px;
+        height: 440px;
+
+        ul li {
+            margin: 1em;
+            letter-spacing: 0.1rem;
+            line-height: 1.4rem;
+            font-size: 1rem;
+        }
+    }
+
+    .project-links-wrapper {
+        font-size: 1.4rem;
+    }
+}

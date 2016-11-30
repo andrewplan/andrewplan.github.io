@@ -1,0 +1,41 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-graphic-wrapper {
+    background-size: 40px 40px;
+    background-image: repeating-linear-gradient(0deg, #9E9E9E, #9E9E9E 1px, transparent 1px, transparent 40px),repeating-linear-gradient(-90deg, #9E9E9E, #9E9E9E 1px, transparent 1px, transparent 40px);
+    height: 100%;
+    width: 100%;
+    opacity: 0.14;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+}
+
+.top-left-white-triangle {
+    width: 20vh;
+    height: 20vh;
+    transform: rotate( -45deg );
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #795548;
+}
+
+.bottom-right-white-triangle {
+    width: 20vh;
+    height: 60vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate( 45deg );
+    background: #795548;
+}

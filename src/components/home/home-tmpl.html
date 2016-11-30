@@ -1,0 +1,203 @@
+<nav class="home-nav-wrapper">
+    <div class="home-nav-wrapper-menu-icon-wrapper" ng-click="$ctrl.goToSlide( 2 )">
+        <i class="material-icons" style="font-size: 36px">menu</i>
+    </div>
+    <div
+        class="home-nav-wrapper-logo-wrapper-small"
+        ng-click="$ctrl.goToSlide( 0 )"
+
+    >
+        <img class="logo-slide-wrapper-logo-image" src="./AndrewPlan_logo.png" alt="Andrew Plan, full stack web developer">
+    </div>
+</nav>
+
+<ks-swiper-container
+    class="swiper-container-center-wrapper"
+    direction="vertical"
+    initial-slide="0"
+    on-ready="$ctrl.onReadySwiper( swiper )"
+    override-parameters="{'mousewheelControl': 'true', 'speed': 400 }"
+    show-nav-buttons="true"
+    swiper="$ctrl.swiper"
+>
+    <ks-swiper-slide class="swiper-slide">
+        <div class="slide-center-wrapper">
+            <div class="logo-slide-wrapper">
+                <img class="logo-slide-wrapper-logo-image" src="./AndrewPlan_logo.png" alt="Andrew Plan, full stack web developer">
+                <div class="logo-slide-wrapper-subheader-wrapper">
+                    <h4 class="logo-slide-wrapper-subheader-wrapper-lines">Full Stack Web Developer</h4>
+                    <h4 class="logo-slide-wrapper-subheader-wrapper-lines">Professional Musician</h4>
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+
+    <ks-swiper-slide class="swiper-slide">
+        <div class="slide-center-wrapper">
+            <div class="about-me-slide-wrapper">
+                <div class="about-me-slide-wrapper-about-me-text-wrapper">
+                    <h1 class="about-me-slide-wrapper-about-me-text-wrapper-about-text">
+                        ABOUT
+                    </h1>
+                    <h1 class="about-me-slide-wrapper-about-me-text-wrapper-me-text">
+                        ME
+                    </h1>
+                </div>
+                <div class="about-me-slide-wrapper-content-wrapper">
+                    <div class="about-me-slide-wrapper-content-wrapper-blue-box"></div>
+                    <div class="about-me-slide-wrapper-content-wrapper-black-box"></div>
+                    <div class="about-me-slide-wrapper-content-wrapper-white-box">
+                        <p>
+                          I'm a full stack web developer
+                          and professional musician
+                          with a passion for creating beautiful, viable products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+
+    <ks-swiper-slide class="swiper-slide">
+        <div class="slide-center-wrapper">
+            <div class="my-skills-slide-wrapper">
+                <div class="my-skills-slide-wrapper-my-skills-text-wrapper">
+                    <h1 class="my-skills-slide-wrapper-my-skills-text-wrapper-my-text">
+                        MY
+                    </h1>
+                    <h1 class="my-skills-slide-wrapper-my-skills-text-wrapper-skills-text">
+                        SKILLS
+                    </h1>
+                </div>
+                <div class="my-skills-slide-wrapper-content-wrapper">
+                    <div class="devicons devicons-html5"></div>
+                    <div class="devicons devicons-css3"></div>
+                    <div class="devicons devicons-sass"></div>
+                    <div class="devicons devicons-materializecss"></div>
+                    <div class="devicons devicons-responsive"></div>
+                    <div class="devicons devicons-javascript"></div>
+                    <div class="devicons devicons-jquery"></div>
+                    <div class="devicons devicons-angular"></div>
+                    <div class="devicons devicons-react"></div>
+                    <div class="devicons devicons-nodejs"></div>
+                    <div class="devicons devicons-mongodb"></div>
+                    <div class="devicons devicons-git"></div>
+                    <div class="devicons devicons-github_badge"></div>
+                    <div class="devicons devicons-terminal"></div>
+                    <div class="devicons devicons-npm"></div>
+                    <div class="devicons devicons-aws"></div>
+                    <div class="devicons devicons-firebase"></div>
+                    <div class="devicons devicons-digitalocean"></div>
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+
+    <ks-swiper-slide class="swiper-slide">
+        <div class="slide-center-wrapper">
+            <div class="recent-projects-slide-wrapper">
+                <div class="recent-projects-slide-wrapper-heading-wrapper">
+                    <h4 class="recent-projects-slide-wrapper-heading-wrapper-recent-projects-text">
+                        RECENT PROJECTS
+                    </h4>
+                    <h3
+                        class="recent-projects-slide-wrapper-heading-wrapper-project-name-text"
+                        ui-sref="project-view( { name: 'musikbox' } )"
+                    >
+                        MUSIKBOX
+                    </h3>
+                    <h3
+                        class="recent-projects-slide-wrapper-heading-wrapper-project-name-text"
+                        ui-sref="project-view( { name: 'songjam' } )"
+                    >
+                        SONGJAM
+                    </h3>
+                    <!-- <h3
+                        class="recent-projects-slide-wrapper-heading-wrapper-project-name-text"
+                        ui-sref="project-view( { name: 'perfect-chords' } )"
+                    >
+                        PERFECT CHORDS
+                    </h3> -->
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+
+    <ks-swiper-slide class="swiper-slide">
+        <div class="slide-center-wrapper">
+            <div class="contact-info-slide-wrapper">
+                <div class="contact-info-slide-wrapper-contact-info-text-wrapper">
+                    <h1 class="contact-info-slide-wrapper-contact-info-text-wrapper-get-in-text">
+                        GET IN
+                    </h1>
+                    <h1 class="contact-info-slide-wrapper-contact-info-text-wrapper-touch-text">
+                        TOUCH
+                    </h1>
+                </div>
+
+                <div class="contact-info-slide-wrapper-picture-wrapper">
+                    <img src="./andrew_plan_headshot.jpg" alt="Andrew Plan's headshot">
+                </div>
+                <div class="contact-info-slide-wrapper-content-wrapper">
+                    <div class="contact-info-slide-wrapper-content-wrapper-blue-box"></div>
+                    <div class="contact-info-slide-wrapper-content-wrapper-black-box"></div>
+                    <div class="contact-info-slide-wrapper-content-wrapper-white-box">
+                        <div>
+                            <h3>EMAIL</h3>
+                            <a ng-href="{{ $ctrl.trustSrc( 'mailto:andrewoliverplan@gmail.com' ) }}">
+                                <p>andrewoliverplan@gmail.com</p>
+                            </a>
+
+                            <h3>LINKEDIN</h3>
+                            <a ng-href="{{ $ctrl.trustSrc( 'https://linkedin.com/in/andrewplan' ) }}"><p>linkedin.com/in/andrewplan</p></a>
+
+                            <h3>GITHUB</h3>
+                            <a ng-href="{{ $ctrl.trustSrc( 'https://github.com/andrewplan' ) }}"><p>github.com/andrewplan</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ks-swiper-slide>
+</ks-swiper-container>
+
+<nav class="bottom-nav-wrapper">
+    <div class="arrow-wrapper">
+        <i class="material-icons slider-arrow" ng-click="$ctrl.prev()">keyboard_arrow_up</i>
+        <i class="material-icons slider-arrow" ng-click="$ctrl.next()">keyboard_arrow_down</i>
+    </div>
+</nav>
+
+<nav class="bottom-nav-links-wrapper">
+    <div
+        class="bottom-nav-links-wrapper-links-container"
+    >
+        <p
+            class="bottom-nav-links-wrapper-links-container-about-link"
+        >
+            <span
+                ng-click="$ctrl.goToSlide( 1 )"
+            >
+                ABOUT
+            </span>
+              +
+            <span
+                ng-click="$ctrl.goToSlide( 2 )"
+            >
+                SKILLS
+            </span>
+        </p>
+        <p
+            class="bottom-nav-links-wrapper-links-container-contact-link"
+            ng-click="$ctrl.goToSlide( 4 )"
+        >
+            CONTACT
+        </p>
+        <p
+            class="bottom-nav-links-wrapper-links-container-projects-link"
+            ng-click="$ctrl.goToSlide( 3 )"
+        >
+            PROJECTS
+        </p>
+    </div>
+</nav>
