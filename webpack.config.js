@@ -53,6 +53,7 @@ module.exports = {
     }
     , output: {
         path: __dirname + "/dist"
+        , publicPath: '/andrewplan.github.io/dist/'
         , filename: "bundle.js"
     }
     , devServer: {
