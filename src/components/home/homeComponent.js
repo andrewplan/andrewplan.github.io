@@ -6,6 +6,7 @@ function homeCtrl( $sce ) {
 
     this.onReadySwiper = ( swiper ) => {
         swiper.on( 'slideChangeStart', () => {
+            console.log( swiper );
             if ( swiper.activeIndex > 0 ) {
                 angular
                     .element( document.querySelector( '.home-nav-wrapper-logo-wrapper-small' ) )

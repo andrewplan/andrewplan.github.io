@@ -41215,6 +41215,7 @@
 
 	    this.onReadySwiper = function (swiper) {
 	        swiper.on('slideChangeStart', function () {
+	            console.log(swiper);
 	            if (swiper.activeIndex > 0) {
 	                angular.element(document.querySelector('.home-nav-wrapper-logo-wrapper-small')).css({ 'display': 'inline-block' });
 	            } else {
