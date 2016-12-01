@@ -208,6 +208,11 @@
 }
 
 @media ( min-device-width: 1024px ) {
+    .project-slide-block-wrapper {
+        width: 400px;
+        padding: 19px 0;
+    }
+
     .project-facts-slide-wrapper-content-wrapper {
         width: 340px;
         height: 340px;
