@@ -3,6 +3,10 @@
   src: url("./SIFONN_PRO.otf");
 }
 
+.swiper-container {
+    height: 100%;
+}
+
 .home-nav-wrapper {
     position: fixed;
     width: 100vw;
@@ -403,9 +407,14 @@
         font-size: 1.6rem;
         line-height: 2.2rem;
     }
+
+    .my-skills-slide-wrapper-content-wrapper {
+        width: 55vh;
+    }
+
     .my-skills-slide-wrapper-content-wrapper div {
         padding: 1rem;
-        font-size: 72px;
+        font-size: 54px;
     }
 
     .contact-info-slide-wrapper-picture-wrapper {

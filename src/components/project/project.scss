@@ -208,8 +208,8 @@
 
 @media ( min-device-width: 1024px ) {
     .project-facts-slide-wrapper-content-wrapper {
-        width: 440px;
-        height: 440px;
+        width: 340px;
+        height: 340px;
 
         ul li {
             margin: 1em;
@@ -221,5 +221,6 @@
 
     .project-links-wrapper {
         font-size: 1.4rem;
+        bottom: 12%;
     }
 }
