@@ -1,10 +1,11 @@
 const webpack = require( 'webpack' );
 
 module.exports = {
-    entry: [
-      "webpack-dev-server/client?http://localhost:8080"
-      , "./src/app.js"
-    ]
+    // entry: [
+    //   "webpack-dev-server/client?http://localhost:8080"
+    //   , "./src/app.js"
+    // ]
+    entry: "./src/app.js"
     , module: {
         loaders: [
             {
