@@ -270,6 +270,11 @@
             justify-content: center;
             align-items: center;
 
+            &-text-wrapper {
+                width: 100%;
+                height: auto;
+            }
+
             a {
                 color: black;
                 text-decoration: none;
@@ -426,6 +431,10 @@
     }
 
     .contact-info-slide-wrapper-content-wrapper-white-box {
+        &-text-wrapper {
+            padding-left: 1.4rem;
+        }
+
         h3 {
             font-size: 1.5rem;
             letter-spacing: 0.4rem;
@@ -433,8 +442,8 @@
 
         p {
             letter-spacing: 0.1rem;
-            line-height: 1.5rem;
-            font-size: 1.3rem;
+            line-height: 1.4rem;
+            font-size: 1.1rem;
         }
     }
 
